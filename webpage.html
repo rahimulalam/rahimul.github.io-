@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+    <link rel="stylesheet" href="webstyle.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="script.js"></script>
+    <nav> 
+        <h5>Solar Quadcopter</h5>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+
+            
+            <li><a href="#whysolar">Why Solar?</a></li>
+
+
+            <li><a href="#contact">Contact</a></li> 
+        </ul>
+    </nav>
+    
+    <header>Welcome to the next generation hybrid quadcopter solution</header>
+
+    <h1></h1>
+
+
+
+    <section id="pictures">
+       
+        <img src="IMG_9281.JPG" alt="Solar Quadcopter model" onclick="imageOrder()">
+        <img src="IMG_9405.JPG" alt="Solar Quadcopter in grass" onclick="imageOrder()">
+        <img src="solarpanel.jpg" alt="Solar Quadcopter model2" onclick="imageOrder()">
+        
+        
+    </section>
+
+    <section>
+        <h2 id="overview">Overview</h2>
+        <p2>The use of Sun’s energy is not something new. Dating back to the 7th century, the energy of the sun has been used for many different purposes and power a UAV in one of them. Photovoltaic Cell (PV) was built first in the year 1954 but only in the year 1960, when NASA used solar energy to power its spacecraft, the use of it rose.
+            R.J Boucher was first to achieve solar powered flight in Sunrise1 airplane on 4th November, 1974. Ever since many solar UAVs were made.</p2>
+    </section>
+
+    
+
+    <section>
+        <h2 id="whysolar">Why Solar?</h2>
+        <p2>The electrical advancement in the early 2000, saw discovery of small, cheap and light weight accelerometers and flight controllers which then saw rise in demand for consumer quadcopters. The small size and maneuvering ability made it possible to fly them indoor.
+            Soon as the years went by many different applications for these quadcopters were discovered like; military for border surveillance or other military missions where they might not have electricity to charge the drones, fire rescue mission for getting a clear view of the place affected by fire or also view the survivors, for Traffic surveillance on roads and to update for and major or minor accidents, security purposes in a community to watch out the area.
+            With rapid improvement of Lithium-Polymer (LiPo) batteries, the performances of these RC drones have gone up compared to older models. But even with all these advancement the relative flight time of these quadcopter is fairly low and limited. Which is why they have to be charged by returning to the base or battery has to be replaced. This puts limit to the operation of quadcopter’s time and distance. The charging of these batteries also does consume fairly high amount of electricity from non-renewable resource.
+            In my project I am using solar energy to solve the electrical energy problem. This will give the quadcopter more distance to travel as they don’t always have to return back to the base for charging and will also use energy from Sun to charge the battery which is free of cost.</p2>
+    </section>
+
+
+
+    <section>
+        <h2>Components</h2>
+        <div id="myModal" class="modal">
+            
+            <!-- Modal content -->
+            <div class="modal-content">
+              <button id="closeModal">Close</button>
+              <div class="card_expand">
+                <div class="container_expand" id="innerModal">
+                  
+                </div>
+            </div>
+            </div>
+          
+          </div>
+
+        
+        <div id="parent" class="row">
+            <div class="column">
+                <div class="card">
+                    <div id="card1" class="container">
+                      <h3>Solar Cell</h3>
+                      <h4>Monocrystalline silicon</h4>
+                      <p>Monocrystalline cells are very light and are still efficient enough for my project. The problem with them is that they are very fragile and can be damaged if handled poorly but at the same time even if they also require to be purchased online, they can be ordered in smaller quantities. Monocrystalline cells are also space efficient and so suits this project very well. Sunpower Maxeon C60 Solar Cells are the latest and the best monocrystalline cells right now. Sunpower solar cells power contact are all at the back of the cell hence leaving the face of the cell plain. The benefit of that is not only it will produce more output power at relatively small size but will also prevent the cell form shattering due to the copper backing. So this is why I have decided to use them in my project.
+                      My solar panel has 12 solar cells connected in series, inorder to achieve hiher voltage of around 7 volts.</p>
+                      <img src="maxeonc60.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div id="card2" class="container">
+                        <h3>Flight Controller</h3>
+                        <h4>6-axis Gyro</h4>
+                        <p>The main function of a flight controller is to maintain a proper motor RPM in reply to the input sent by the pilot. When the pilot wants to move the quadcopter forward, the command is sent to the flight controller and then the flight controller directs the motors RPM accordingly. The flight controller is basically just a small circuit board which is the nerve center of a drone. Flight controllers manipulate the motors RPM to gain required outcome and so they had to be programmed correctly with the transmitter and motors. So I thought that it was better to use the same flight controller that I used on the on my previous drone as I am already using its motors.
+                            The picture below is the flight controller that I will use. The flight controller here is very basic one with 6-axis Gyro. Though this flight controller also has optional camera control if camera is added but that is not needed in this project for now.</p>
+                        <img src="flightcontroller.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div id="card3" class="container">
+                        <h3>Battery</h3>
+                        <h4>2s LiPo</h4>
+                        <p>For my light weight solar quadcopter I am using a 2s LiPo battery with 7.4 volts and 1500mAh. This 2s battery is enough to power my small motors and this will also be weight efficient as other batteries like 3s batteries are bigger and heavier but they can provide more power.
+                            Charging 2s battery using solar panel will take less time compared to charging 3s battery and more solar cells might be needed to be added which will again increase the overall weight thus might surpass the max allowed weight for lift.</p>
+                        <img src="lipobattery.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+        
+    </section>  
+
+
+
+    
+
+    <section>
+        <h2 id="contact">Let me know your feedback</h2>
+        <h4>Share your thoughts below</h4>
+        <input placeholder="feedback"/>
+        <button>Send</button>
+
+    </section>
+
+
+
+    <footer>
+
+        <div>
+            <p>Rahimul Alam,</p>
+            <p>Aerospace Engineer</p>
+            <p>Email: rahimulalve@gmail.com</p>
+            <p>Location: Al Ain, UAE</p>
+        </div>
+        
+        <ul>
+    
+            <li><a href="#overview">Overview</a></li>
+
+            
+            <li><a href="#whysolar">Why Solar?</a></li>
+
+
+            <li><a href="#contact">Contact</a></li>  
+    
+        </ul>
+    
+    
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+
+</body>
+
+</html>
